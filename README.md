@@ -35,6 +35,9 @@ $controller->set_pin_value(16, GPIO::HIGH);
 Python
 ------
 
+### See also
+Actively maintained python module: https://github.com/evadot/fbsd_gpio_py
+
 ### Build
 ```
 python setup.py build
