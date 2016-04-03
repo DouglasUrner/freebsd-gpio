@@ -24,7 +24,7 @@ $controller->open() or die("Can't open GPIO controller dev: $!");
 # config pin
 $controller->set_pin_config(16, GPIO::PIN_OUTPUT);
 
-# pin LOW, LED is on
+# pin LOW, LED is off
 $controller->set_pin_value(16, GPIO::LOW);
 sleep(1);
 
