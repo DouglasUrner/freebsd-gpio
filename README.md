@@ -24,11 +24,11 @@ $controller->open() or die("Can't open GPIO controller dev: $!");
 # config pin
 $controller->set_pin_config(16, GPIO::PIN_OUTPUT);
 
-# pin LOW, LED is off
+# pin LOW, LED is on (active-low pin)
 $controller->set_pin_value(16, GPIO::LOW);
 sleep(1);
 
-# pin HIGH, LED is on
+# pin HIGH, LED is off
 $controller->set_pin_value(16, GPIO::HIGH);
 ```
 
@@ -55,7 +55,7 @@ led_pin = gpioc.pin(16)
 # config pin
 led_pin.config = gpio.PIN_OUTPUT
 
-# pin LOW, LED is on
+# pin LOW, LED is on (active-low pin)
 led_pin.value = gpio.LOW
 sleep(1);
 
@@ -82,11 +82,11 @@ led_pin = gpioc.pin(16)
 # config pin
 led_pin.config = GPIO_PIN_OUTPUT
 
-# pin LOW, led is ON
+# pin LOW, led is on (active-low pin)
 led_pin.value = GPIO_LOW
 sleep(1)
 
-# pin HIGH, led is OFF
+# pin HIGH, led is off
 led_pin.value = GPIO_HIGH
 
 ```
